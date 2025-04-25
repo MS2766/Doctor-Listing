@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Doctor Listing Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based web application that allows users to search, filter, and sort a list of doctors based on specialties, consultation modes, fees, and experience. The app features an autocomplete search, dynamic filters, and a responsive design with Tailwind CSS styling.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Search**: Autocomplete search for doctors by name, symptoms, specialties, or clinics.
+- **Filters**: Filter doctors by specialties and consultation modes (Video Consult, In Clinic).
+- **Sorting**: Sort by price (low to high) or experience (most experienced first).
+- **Responsive Design**: Optimized for desktop and mobile views.
+- **Browser Navigation**: Retains filters and search state with Back/Forward navigation.
+- **Styling**: Uses Tailwind CSS for a modern, blue-accented UI.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Version 19.1.0 for building the UI.
+- **Tailwind CSS**: Version 3.4.17 for styling.
+- **React Scripts**: Version 5.0.1 for building and development.
+- **Testing Libraries**: `@testing-library/react`, `@testing-library/jest-dom`, `@testing-library/user-event`, `@testing-library/dom`.
+- **Deployment**: Hosted on GitHub Pages using `gh-pages`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14 or higher)
+- npm (comes with Node.js)
 
-### `npm run build`
+### Steps
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/MS2766/Doctor-Listing.git
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the project directory:
+    ```bash
+    cd Doctor-Listing
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-### `npm run eject`
+4. Start the development server:
+    ```bash
+    npm start
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Open `http://localhost:3000` in your browser to see the app.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
+- **Search Bar**: Type to search for doctors or specialties. Suggestions will appear with photos and details.
+- **Filters**: Use the left panel to filter by specialties (searchable) or consultation mode. Sort options are available under "Sort by".
+- **Doctor Cards**: Click "Book Appointment" to (currently a placeholder action).
+- **Navigation**: Use browser Back/Forward buttons to retain filter states.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Deployment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The app is deployed on GitHub Pages at:
 
-## Learn More
+**Live URL**: [https://MS2766.github.io/Doctor-Listing](https://MSent Steps
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Build the project:
+    ```bash
+    npm run build
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Deploy to GitHub Pages:
+    ```bash
+    npm run deploy
+    ```
 
-### Code Splitting
+3. Configure GitHub Pages in repository settings:
+    - Go to **Settings > Pages**.
+    - Set source to `gh-pages` branch and `/root` folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Data Source
 
-### Analyzing the Bundle Size
+The app uses a local JSON file (`public/doctors.json`) for doctor data, originally sourced from [https://srijandubey.github.io/campus-api-mock/SRM-C1-25.json](https://srijandubey.github.io/campus-api-mock/SRM-Cribute:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the repository.
+2. Create a new branch:
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+3. Make your changes and commit:
+    ```bash
+    git commit -m "Add your message"
+    ```
+4. Push to the branch:
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+5. Open a pull request with a description of your changes.
